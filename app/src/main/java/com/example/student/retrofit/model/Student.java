@@ -15,6 +15,13 @@ public class Student {
     @SerializedName("student_id")
     private String student_Id;
 
+    public Student(String id, String name, String dept, String student_Id) {
+        this.id = id;
+        this.name = name;
+        this.dept = dept;
+        this.student_Id = student_Id;
+    }
+
     public String getId() {
         return id;
     }
